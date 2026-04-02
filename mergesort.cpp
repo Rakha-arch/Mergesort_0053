@@ -6,8 +6,20 @@ int n;
 
 void input()
 {
-    cout << "Masukkan Panjang element array : ";
-    cin >> n;
+    while (true)
+    {
+        cout << "Masukkan Panjang element array : ";
+        cin >> n;
+    
+        if (n <= 20)
+        {
+            break;
+        }    
+        else
+        {
+            cout << "\nMaksimum panjang array adalah 20" << endl;
+        }
+    }
 }
 
 int main()
